@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        [x-cloak] {
+           display: none !important; 
+        }
+        body {
+            @apply font-light;
+        }
+        h1 {
+            @apply text-[2rem] font-bold;
+        }
+        /* .input-field {
+            @apply bg-neutral-100 w-full px-3 py-2.5 border border-neutral-300 rounded-sm placeholder:text-neutral-400 focus:outline-hidden;
+        }
+        .button {
+            @apply bg-neutral-100 w-full px-3 py-2.5 rounded-sm font-medium text-neutral-400 text-sm cursor-not-allowed ;
+        }
+        .button-active {
+            @apply bg-rose-500 hover:bg-rose-600 text-white cursor-pointer;
+        } */
+    </style>
+</head>
+<body>
+
+<div class="min-h-[100dvh]">
+    <!-- SIDEBAR -->
+    <menu class="fixed bg-white h-screen w-20 lg:w-74 pt-3 pl-5.5 border-r border-neutral-200">
+        <div>
+            <a class="flex items-center gap-2" href="">
+                <img class="h-8" src="https://img.icons8.com/pastel-glyph/64/safe--v1.png" alt="safe--v1"/>
+                <h1 class="hidden lg:inline-block">Vault</h1>
+            </a>
+        </div>
+    </menu>
+
+    <main class="bg-white ml-20 lg:ml-[18.5rem] mr-20 p-4">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+            <!-- Article 1 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline text-sm">@Jason</a>
+                    <div>
+                        <a class="hover:underline text-xs" href="">#tag</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 2 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1015/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Emily</a>
+                    <div>
+                        <a class="hover:underline" href="">#nature</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 3 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1025/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Alex</a>
+                    <div>
+                        <a class="hover:underline" href="">#sunset</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 4 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1033/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Nina</a>
+                    <div>
+                        <a class="hover:underline" href="">#travel</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 5 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1042/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Leo</a>
+                    <div>
+                        <a class="hover:underline" href="">#urban</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 6 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1050/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Sara</a>
+                    <div>
+                        <a class="hover:underline" href="">#beach</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 7 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1062/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Chris</a>
+                    <div>
+                        <a class="hover:underline" href="">#forest</a>
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Article 8 -->
+            <article class="relative aspect-square overflow-hidden rounded-lg">
+                <img class="w-full h-full object-cover" src="https://picsum.photos/id/1074/400/400" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5 z-10 text-white">
+                    <a href="#" class="hover:underline">@Maya</a>
+                    <div>
+                        <a class="hover:underline" href="">#adventure</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+<!-- RIGHT SIDEBAR -->
+<aside class="fixed right-0 top-0 h-screen w-20 z-10 flex flex-col justify-end pl-4 py-4 border-l border-neutral-200">
+    <button id="scrollButton" class="size-12 rounded-full bg-neutral-100 hover:bg-neutral-200 cursor-pointer flex items-center justify-center hidden">
+        <div class="size-6">
+            <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24 20.24 13.17 13.17a1 1 0 0 0 1.42 0l2.82-2.82a1 1 0 0 0 0-1.42L25.06 12.82a1.5 1.5 0 0 0-2.12 0L6.59 29.17a1 1 0 0 0 0 1.42L9.4 33.4a1 1 0 0 0 1.42 0L24 20.24Z"></path>
+            </svg>
+        </div>
+    </button>
+</aside>
+</div>
+
+<script>
+    const scrollButton = document.getElementById('scrollButton');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            scrollButton.classList.remove('hidden');
+        } else {
+            scrollButton.classList.add('hidden');
+        }
+    });
+
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
