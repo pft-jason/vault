@@ -9,7 +9,10 @@
     <title>Vault</title>
     <style type="text/tailwindcss">
         @custom-variant dark (&:where(.dark, .dark *));
-        
+        @theme {
+            --color-primary: oklch(45.2% 0.211 324.591);
+            --color-primary-dark: oklch(40.1% 0.17 325.612);
+        }
         [x-cloak] {
            display: none !important; 
         }
